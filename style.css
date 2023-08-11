@@ -151,10 +151,59 @@ body {
     font-family: "Guardian Sans", sans-serif;
   }
 
+  p {
+    line-height: 1.4;
+  }
+
   a {
-    color: #111;
-    text-decoration: underline;
     font-family: 'Guardian Sans Bold';
+    outline: none;
+    line-height: 1.4;
   }
   
+  a:link {
+    color: #000000;
+  }
+  
+  a:visited {
+    color: #292929;
+  }
+  
+  /* Link one style */
+
+  #link-one a:focus {
+    text-decoration: none;
+    background: #003480;
+  }
+  
+  #link-one a:hover {
+    text-decoration: none;
+    background: #003480;
+    color: #ffffff;
+  }
+  
+  #link-one a:active {
+    background: #003480;
+    color: #ffffff;
+  }
+
+  /* Link two style */
+
+  #link-two a:focus {
+    text-decoration: none;
+    background: #006CD4;
+  }
+  
+  #link-two a:hover {
+    text-decoration: none;
+    background: #006CD4;
+    color: #ffffff;
+    border: #003480 2px solid;
+  }
+  
+  #link-two a:active {
+    background: #006CD4;
+    color: #ffffff;
+    
+  }
   
