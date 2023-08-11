@@ -58,7 +58,7 @@ body {
     padding: 20px;
 }
 
-.black-bg a {
+.black-bg a:link {
     padding: 2px;
     color: #ffffff;
 }
