@@ -12,6 +12,8 @@
        <h1>Accessible focus states testing site</h1> 
        <h2>Use keyboard navigation (tab key) to cycle through different styles</h2>
 
+       <hr class="dashed">
+
         <h3>Link styles</h3>
 
         <div id="text-links">
@@ -40,6 +42,8 @@
             </div>
         </div>
 
+        <hr class="dashed">
+
         <h3>Coloured backgrounds</h3>
 
             <div class="yellow-bg">
@@ -54,8 +58,44 @@
                 </div>
             </div>
 
+            <div class="white-bg">
+                <div id="link-nine">
+                    <a href="#" aria-label="This is an active link">Link style</a>
+                </div>
+            </div>
 
+        <hr class="dashed">
 
-            
+        <h3>Facebook links</h3>
+
+            <div class="black-bg">
+                <ul class="flex-container nowrap">
+                    
+                        <a class="flex-item link link--navigation link--light true-white" href="https://www.facebook.com/wellingtoncitycouncil">
+                        <span class="flex-item icon icon--social icon--social-facebook" aria-hidden="true"></span>
+                        Like us on Facebook
+                        </a>
+                    
+                </ul>               
+            </div>
+
+        <hr class="dashed">
+
+        <h3>Input fields</h3>
+           <div class="input--field-group">
+                <label class="input--label" for="user-name">Label</label>
+                <input class="input--field-a" id="user-name" type="text" name="user_name" />
+		   </div>
+
+           <div class="input--field-group">
+                <label class="input--label" for="user-name">Label</label>
+                <input class="input--field-b" id="user-name" type="text" name="user_name" />
+           </div>
+
+           <div class="input--field-group good">
+                <label class="input--label" for="user-name">Label<svg class="icon"></svg></label>
+                <input class="input--field-c" id="user-name" type="text" name="user_name" />
+           </div>
+
     </body>
 </html>

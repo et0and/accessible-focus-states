@@ -54,7 +54,7 @@ body {
 .black-bg {
     background:#000000;
     width: 50%;
-    display: block;
+    display: flex;
     padding: 20px;
 }
 
@@ -63,14 +63,29 @@ body {
     color: #ffffff;
 }
 
+.white-bg {
+  background:#FFFFFF;
+  width: 50%;
+  display: block;
+  padding: 20px;
+}
+
+/* Dividers */
+
+hr.dashed {
+  border-top: 2px dashed #838383;
+  margin-top: 2em;
+}
+
 /* Links */
 
   a {
     font-family: 'Guardian Sans';
   }
   
-  a:link {
-    color: #000000;
+  .link,a {
+    text-decoration: underline;
+    color: #000
   }
   
   /* Link one style */
@@ -213,5 +228,177 @@ body {
   #link-eight a:active {
     text-decoration: underline;
     color: #ffffff;
+  }
+
+  /* Link nine style */
+
+  #link-nine a:focus {
+    text-decoration: underline;
+    color: #006CD4;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #006CD4;
+  } 
+  
+  #link-nine a:hover,
+  #link-nine a:active {
+    text-decoration: underline;
+    color: #006CD4;
+  }
+
+  /* Facebook link */
+
+  #fb-link a:focus {
+    text-decoration: underline;
+    color: #949494;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #949494;
+  }
+
+  #fb-link a:hover,
+  #fb-link a:active {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  .icon:after {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+  }
+
+  .icon--social:after {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    border-radius: 10rem;
+    background-color: #fff
+  }
+
+  a:hover .icon--social:after {
+      background-color: #949494
+  }
+
+  .icon--social-facebook:after {
+      background-image: url(/icons/facebook.svg);
+
+  }
+
+  .link--light {
+    color: #fff
+  }
+
+  .link--light:hover {
+      color: #949494
+  }
+
+  .link--light:focus {
+      background-color: #003480;
+      color: #fff
+  }
+
+  /*.justify-content-between {
+    -webkit-box-pack: justify!important;
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important
+  }*/
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-self: center;
+  }
+  
+  .nowrap  { 
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* Input fields */
+
+  .input--field-a {
+    width: 256px;
+    height: 2.5em;
+    border: 2px solid #000000;
+  }
+
+  .input--field-a:hover {
+    color: #006CD4;
+  }
+
+  .input--field-a:focus {
+    outline-color: #006CD4;
+    border-color: #003480;
+    outline-style: solid;
+    outline-width: 4px;
+  }
+
+  .input--field-b {
+    width: 256px; 
+    height: 2.5em;
+    border: 2px solid #000000;
+  }
+
+  .input--field-b:hover {
+    color: #003480;
+  }
+
+  .input--field-b:focus {
+    outline-color: #003480;
+    border-color: #006CD4;
+    border-radius: 2px;
+    outline-style: solid;
+    outline-width: 4px;
+  }
+
+  .input--field-c {
+    width: 256px;
+    height: 2.5em;
+    border: 2px solid #000000;
+    border-radius: 2px;
+  }
+
+  .input--field-c:hover {
+    color: #006CD4;
+  }
+
+  .input--field-c:focus { 
+    outline-color: #006CD4;
+    border-color: #003480;
+    outline-style: solid;
+    outline-width: 4px;
+  }
+
+  [class^="icon"] {
+    position: relative;
+    background: url(/icons/info.svg) no-repeat;
+  }
+  
+  .good [class^="icon"] {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  .input--field-group {
+    margin-bottom: 0.75em;
+  }
+
+  .input--label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
   }
 
