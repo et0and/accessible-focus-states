@@ -529,8 +529,77 @@
   }
  
   .button-c:focus {
-    background-color: transparent;
+  background-color: transparent;
   color: #003480;
+  outline-color: #d4d4d4;
+  border-color: #003480;
+  border-width: 2px;
+  border-style: double;
+  outline-style: solid;
+  outline-width: 2px;
+  box-shadow: 0 0 0 4px #003480;
+  } 
+
+  /* Scroll to top button */
+
+  #scrollToTopBtn {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    width: 85px;
+    height: 85px;
+    justify-content: center;
+  }
+
+  .gg-arrow-up {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    justify-content: center;
+}
+.gg-arrow-up::after,
+.gg-arrow-up::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 2px;
+    justify-content: center;
+}
+.gg-arrow-up::after {
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    left: 2px;
+    justify-content: center;
+}
+.gg-arrow-up::before {
+    width: 2px;
+    height: 20px;
+    left: 10px;
+    background: currentColor;
+    justify-content: center;
+}
+
+#scrollToTopBtn:hover, .gg-arrow-up:hover {
+  background-color: #003480;
+  color: #fff;
+}
+
+#scrollToTopBtn:focus, .gg-arrow-up:focus {
+  background-color: #003480;
+  color: #fff;
   outline-color: #d4d4d4;
   border-color: #003480;
   border-width: 2px;
