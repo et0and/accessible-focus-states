@@ -30,7 +30,7 @@ body {
 	margin: 4rem;
 	color: #111;
 	font-family: "Guardian Sans", sans-serif;
-	background-color: #d4d4d4;
+	background-color: #eeeeee;
 }
 /* Sections */
 .yellow-bg {
@@ -39,6 +39,20 @@ body {
 	display: block;
 	padding: 20px;
 }
+
+.nobg-label {
+	width: 50%;
+	display: block;
+	padding: 20px;
+}
+
+.yellow-label {
+	background: #FFDD00;
+	width: 50%;
+	display: block;
+	padding: 20px;
+}
+
 .yellow-bg a {
 	padding: 2px;
 }
@@ -301,6 +315,63 @@ a:hover .icon--social:after {
 	outline-style: solid;
 	outline-width: 4px;
 }
+.input--field-d {
+	width: 256px;
+	height: 2.5em;
+	border: 2px solid #000000;
+	border-radius: 2px;
+}
+.input--field-d:hover {
+	color: #006CD4;
+}
+.input--field-d:focus {
+	outline-color: #006CD4;
+	border-color: #949494;
+	outline-style: solid;
+	outline-width: 4px;
+}
+.input--field-e {
+	width: 256px;
+	height: 2.5em;
+	border: 2px solid #000000;
+}
+.input--field-e:hover {
+	color: #003480;
+}
+.input--field-e:focus {
+	outline-color: #949494;
+	border-color: #58595B;
+	outline-style: solid;
+	outline-width: 4px;
+}
+.input--field-f {
+	width: 256px;
+	height: 2.5em;
+	border: 2px solid #000000;
+}
+.input--field-f:hover {
+	color: #003480;
+}
+.input--field-f:focus {
+	outline-color: #949494;
+	border-color: #006CD4;
+	outline-style: solid;
+	outline-width: 4px;
+}
+.input--field-g {
+	width: 256px;
+	height: 2.5em;
+	border: 2px solid #000000;
+}
+.input--field-g:hover {
+	color: #003480;
+}
+.input--field-g:focus {
+	outline-color: #DDEBFE;
+	border-color: #006CD4;
+	outline-style: solid;
+	outline-width: 4px;
+}
 [class^="icon"] {
 	position: relative;
 	background: url(/icons/info.svg) no-repeat;
@@ -334,19 +405,18 @@ a:hover .icon--social:after {
 	text-align: center;
 	display: inline-block;
 	line-height: 28px;
+	margin: 5px;
 }
 .button:hover {
 	background-color: #003480;
 }
 .button:focus {
 	background-color: #003480;
-	outline-color: #003480;
 	border-color: #fff;
 	border-width: 2px;
-	border-style: double;
-	outline-style: solid;
-	outline-width: 2px;
-	box-shadow: 0 0 0 2px #003480;
+	outline-style: double;
+	outline-width: 4px;
+	outline-color: #003480;
 }
 .button-a {
 	background-color: transparent;
@@ -363,6 +433,7 @@ a:hover .icon--social:after {
 	text-align: center;
 	display: inline-block;
 	line-height: 28px;
+	margin: 5px;
 }
 .button-a:hover {
 	background-color: transparent;
@@ -372,13 +443,11 @@ a:hover .icon--social:after {
 .button-a:focus {
 	background-color: transparent;
 	color: #003480;
-	outline-color: #d4d4d4;
+	outline-color: #003480;
 	border-color: #003480;
-	border-width: 2px;
-	border-style: double;
-	outline-style: solid;
-	outline-width: 2px;
-	box-shadow: 0 0 0 4px #003480;
+	border-width: 0px;
+	outline-style: double;
+	outline-width: 4px;
 }
 .button-b {
 	background-color:#fff;
@@ -394,6 +463,7 @@ a:hover .icon--social:after {
 	text-align: center;
 	display: inline-block;
 	line-height: 28px;
+	margin: 5px;
 }
 .button-b:hover {
 	background-color: #949494;
@@ -402,13 +472,11 @@ a:hover .icon--social:after {
 .button-b:focus {
 	background-color: #949494;
 	color: #000;
-	outline-color: #fff;
+	outline-color: #949494;
 	border-color: #949494;
-	border-width: 2px;
-	border-style: double;
-	outline-style: solid;
-	outline-width: 2px;
-	box-shadow: 0 0 0 4px #949494;
+	border-width: 0px;
+	outline-style: double;
+	outline-width: 4px;
 }
 .button-c {
 	background-color: transparent;
@@ -425,6 +493,7 @@ a:hover .icon--social:after {
 	text-align: center;
 	display: inline-block;
 	line-height: 28px;
+	margin: 5px;
 }
 .button-c:hover {
 	background-color: transparent;
@@ -436,13 +505,11 @@ a:hover .icon--social:after {
 .button-c:focus {
 	background-color: transparent;
 	color: #003480;
-	outline-color: #d4d4d4;
+	outline-color: #003480;
 	border-color: #003480;
-	border-width: 2px;
-	border-style: double;
-	outline-style: solid;
-	outline-width: 2px;
-	box-shadow: 0 0 0 4px #003480;
+	border-width: 0px;
+	outline-style: double;
+	outline-width: 4px;
 }
 /* Scroll to top button */
 #scrollToTopBtn {
@@ -549,3 +616,71 @@ a:hover .icon--social:after {
 	bottom: 0;
 	content: ' ';
 }
+
+/* Checkboxes */
+
+.checkbox-round {
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 2px solid #000000;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+  }
+  
+  .checkbox-round:hover {
+	border-color: #006CD4;
+  }
+  
+  .checkbox-round:focus {
+	background-color: #fff;
+	  color: #006CD4;
+	  outline-color: #d4d4d4;
+	  border-color: #006CD4;
+	  border-width: 2px;
+	  border-style: double;
+	  outline-style: solid;
+	  outline-width: 2px;
+	  box-shadow: 0 0 0 4px #006CD4;
+  }
+  
+  .checkbox-round:checked {
+	background-color: gray;
+  }
+  
+  .checkbox-square {
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border-radius: 5%;
+	vertical-align: middle;
+	border: 2px solid #000000;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+  }
+  
+  .checkbox-square:checked {
+	background-color: gray;
+  }
+  
+  .checkbox-square:focus {
+	background-color: #fff;
+	  color: #006CD4;
+	  outline-color: #d4d4d4;
+	  border-color: #006CD4;
+	  border-width: 2px;
+	  border-style: double;
+	  outline-style: solid;
+	  outline-width: 2px;
+	  box-shadow: 0 0 0 4px #006CD4;
+  }
+  
+  .checkbox-square:hover {
+	border-color: #006CD4;
+  }
