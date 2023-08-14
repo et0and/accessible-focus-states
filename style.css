@@ -511,9 +511,12 @@ a:hover .icon--social:after {
 	margin: 1em 0;
 	padding: 0;
 	max-width: 437px;
-	align-items: center;
-	justify-content: center;
 	inline-size: 300px;
+}
+.linkCards:hover {
+  color: #000;
+  -webkit-box-shadow: 0 0 0 2px #000;
+  box-shadow: 0 0 0 2px #000
 }
 .linkCards h2 {
 	font-weight: normal;
@@ -521,18 +524,22 @@ a:hover .icon--social:after {
 .linkCards p {
 	font-size: 14px;
 }
-.linkCards li {
+.linkCards li.yellow-card {
 	list-style: none;
 	margin: 1em 0;
 	padding: 24px;
 	background: #FD0;
 	position: relative;
 }
-.linkCards a.main {
-	color: #85baff;
-	text-align: right;
-	display: block;
-	z-index: 1;
+.linkCards li.white-card {
+	list-style: none;
+	margin: 1em 0;
+	padding: 24px;
+	background: #FFF;
+	position: relative;
+}
+.linkCards a:hover {
+	color: #006CD4;
 }
 .linkCards li a.main::after {
 	position: absolute;
