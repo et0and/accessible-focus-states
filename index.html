@@ -8,11 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
        <h1>Accessible focus states testing site</h1> 
        <h2>Use keyboard navigation (tab key) to cycle through different styles</h2>
-       <p>Made using <a href="https://www.figma.com/file/gqziIQ2VewQDCaU8nLfuSC/accessible-focus-states?type=design&node-id=51-814&mode=design&t=V93W15GEvWnqs6bF-0" aria-label="Opens Figma mockups of keyboard accessible focus states of the Wellington City Council website." target="_blank">this Figma document.</a> Still a work in progress.</p>
+       <p>Made using <a href="https://www.figma.com/file/gqziIQ2VewQDCaU8nLfuSC/accessible-focus-states?type=design&node-id=51-814&mode=design&t=V93W15GEvWnqs6bF-0" aria-label="Opens Figma mockups of keyboard accessible focus states of the Wellington City Council website." target="_blank">this Figma document.</a> <strong>Still a work in progress</strong>.</p>
 
        <hr class="dashed">
 
@@ -121,15 +125,44 @@
 
            <h3>Hub cards</h3>
 
-            <ul class="linkCards">
-                <li><a href="https://example.com" aria-label="Takes the user to example.com, used as a test link">
-                    <img src="/images/beach.png" alt="Photograph of the New Zealand beachside, with an open pinkish sky in the distance." width="250px">
-                    <h2>Link style</h2></a>
-                    <p>
-                        Proin tellus ex, tempus at odio a, porttitor scelerisque metus. Mauris maximus nec mi vel feugiat. In iaculis egestas nunc in dapibus. Mauris vitae elementum tortor, ut tincidunt est.
-                    </p>
-                </li>
-            </ul>
+           <div class="yellow-bg">
+                <ul class="linkCards">
+                    <li><a href="https://example.com" aria-label="Takes the user to example.com, used as a test link">
+                        <img src="/images/beach.png" alt="Photograph of the New Zealand beachside, with an open pinkish sky in the distance." width="250px">
+                        <h2 class="linkCards__title">Link style</h2></a>
+                        <p>
+                            Proin tellus ex, tempus at odio a, porttitor scelerisque metus. Mauris maximus nec mi vel feugiat. In iaculis egestas nunc in dapibus. Mauris vitae elementum tortor, ut tincidunt est.
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="comment">
+                    <h3>Incomplete!</h3>
+                    <p><strong>Please note</strong>: this card is not currently accessible. It has been hacked together to resemble the original design but still needs some work in order to make it more functional.</p>
+                </div>
+            </div>
+
+            <div class="white-bg">
+                <ul class="linkCards">
+                    <li><a href="https://example.com" aria-label="Takes the user to example.com, used as a test link">
+                        <img src="/images/beach.png" alt="Photograph of the New Zealand beachside, with an open pinkish sky in the distance." width="250px">
+                        <h2 class="linkCards__title">Link style</h2></a>
+                        <p>
+                            Proin tellus ex, tempus at odio a, porttitor scelerisque metus. Mauris maximus nec mi vel feugiat. In iaculis egestas nunc in dapibus. Mauris vitae elementum tortor, ut tincidunt est.
+                        </p>
+                    </li>
+                </ul> 
+            </div>
+
+            <hr class="dashed">
+
+            <h3>Checkboxes</h3>
+
+            <input type="checkbox" class="checkbox-round">
+            <label for="checkbox">Label</label>
+
+            <input type="checkbox" class="checkbox-square">
+            <label for="checkbox">Label</label>
 
     </body>
 </html>
