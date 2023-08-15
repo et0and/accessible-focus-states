@@ -684,3 +684,77 @@ a:hover .icon--social:after {
   .checkbox-square:hover {
 	border-color: #006CD4;
   }
+
+/* Accordions */
+
+details {
+    list-style-type: none;
+	cursor: pointer;
+	font-weight: bolder;
+    outline: 0;
+    outline-color: #006CD4;
+    border-radius: 0;
+    
+    &:hover {
+        background-color: #006CD4;
+        color: #fff;
+        
+        summary::before,
+        summary::after {
+            color: #000;
+        }
+    }
+    
+    &[open] {
+        background-color: transparent;
+		color:#000;
+       
+    }
+}
+
+details > summary {
+    list-style-type: none;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '+ ';
+    color: #006CD4;
+    font-weight: normal;
+	font-size: 1.5rem;
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+details[open] > summary::before {
+    content: '- ';
+    color: #006CD4;
+    font-weight: normal;
+    margin-left: 0.5rem;
+	font-size: 1.5rem;
+    text-align: left;
+}
+
+details {
+    border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+    padding: 0.5rem;
+}
+
+details:focus {
+    outline: 2px solid #006CD4;
+}
+
+p {
+    font-weight: normal;
+}
+
+details > summary > p {
+    text-align: left;
+}
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
       <p>Made using <a href="https://www.figma.com/file/gqziIQ2VewQDCaU8nLfuSC/accessible-focus-states?type=design&node-id=51-814&mode=design&t=V93W15GEvWnqs6bF-0" aria-label="Opens Figma mockups of keyboard accessible focus states of the Wellington City Council website." target="_blank">this Figma document.</a> Still a work in progress.</p>
       <hr class="dashed">
       <h3>Link styles</h3>
-      <div id="text-links">
+      <div id="text-links" role="Dummy links to pages">
          <div id="link-one">
             <a href="#" aria-label="This is an active link">Link style</a>
          </div>
@@ -40,7 +40,7 @@
       </div>
       <hr class="dashed">
       <h3>Coloured backgrounds</h3>
-      <div class="yellow-bg">
+      <div class="yellow-bg" role="More dummy links, with different coloured backgrounds">
          <div id="link-seven">
             <a href="#" aria-label="This is an active link">Link style</a>
          </div>
@@ -57,7 +57,7 @@
       </div>
       <hr class="dashed">
       <h3>Facebook links</h3>
-      <div class="black-bg">
+      <div class="black-bg" role="Dummy link to Facebook with a social icon against a black background">
          <ul class="flex-container nowrap">
             <a class="flex-item link link--navigation link--light true-white" href="https://www.facebook.com/wellingtoncitycouncil">
             <span class="flex-item icon icon--social icon--social-facebook" aria-hidden="true"></span>
@@ -67,7 +67,7 @@
       </div>
       <hr class="dashed">
       <h3>Input fields</h3>
-      <div class="nobg-label">
+      <div class="nobg-label" role="Dummy input fields for testing different coloured hover states and styles">
          <div class="input--field-group">
             <label class="input--label" for="user-name">Label</label>
             <input class="input--field-a" id="user-name" type="text" name="user_name" />
@@ -112,7 +112,6 @@
             <input class="input--field-g" id="user-name" type="text" name="user_name" />
          </div>
       </div>
-      
       <div class="yellow-label">
          <div class="input--field-group">
             <label class="input--label" for="user-name">Label</label>
@@ -166,10 +165,10 @@
       <button type="button" class="button-b">Button</button>
       <button type="button" class="button-c">Button</button>
       <h4>Scroll to top buttons</h4>
-      <button id="scrollToTopBtn"><i class="gg-arrow-up"></i><br>Top</button>
+      <button id="scrollToTopBtn" role="Dummy scroll to top button"><i class="gg-arrow-up"></i><br>Top</button>
       <hr class="dashed">
       <h3>Hub cards</h3>
-      <ul class="linkCards">
+      <ul class="linkCards" role="Dummy card with an image, header as a link, and a short description">
          <li class="yellow-card">
             <a href="https://example.com" aria-label="Takes the user to example.com, used as a test link">
                <img src="/images/beach.png" alt="Photograph of the New Zealand beachside, with an open pinkish sky in the distance." width="250px">
@@ -180,23 +179,28 @@
             </p>
          </li>
       </ul>
-
-      <ul class="linkCards">
-        <li class="white-card">
-           <a href="https://example.com" aria-label="Takes the user to example.com, used as a test link">
-              <img src="/images/beach.png" alt="Photograph of the New Zealand beachside, with an open pinkish sky in the distance." width="250px">
-              <h2>Link style</h2>
-           </a>
-           <p>
-              Proin tellus ex, tempus at odio a, porttitor scelerisque metus. Mauris maximus nec mi vel feugiat. In iaculis egestas nunc in dapibus. Mauris vitae elementum tortor, ut tincidunt est.
-           </p>
-        </li>
-     </ul>
+      <ul class="linkCards" role="Dummy card with an image, header as a link, and a short description">
+         <li class="white-card">
+            <a href="https://example.com" aria-label="Takes the user to example.com, used as a test link">
+               <img src="/images/beach.png" alt="Photograph of the New Zealand beachside, with an open pinkish sky in the distance." width="250px">
+               <h2>Link style</h2>
+            </a>
+            <p>
+               Proin tellus ex, tempus at odio a, porttitor scelerisque metus. Mauris maximus nec mi vel feugiat. In iaculis egestas nunc in dapibus. Mauris vitae elementum tortor, ut tincidunt est.
+            </p>
+         </li>
+      </ul>
       <hr class="dashed">
       <h3>Checkboxes</h3>
       <input type="checkbox" class="checkbox-round">
       <label for="checkbox">Label</label>
       <input type="checkbox" class="checkbox-square">
       <label for="checkbox">Label</label>
+      <hr class="dashed">
+      <h3>Accordions</h3>
+      <details role="Dummy accordion for testing hover states">
+         <summary>Accordion title</summary>
+         <p>This is some accordion content.</p>
+      </details>
    </body>
 </html>
