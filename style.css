@@ -85,6 +85,10 @@ a {
 	text-decoration: underline;
 	color: #000
 }
+a:hover {
+	color: #006CD4;
+	text-decoration: underline;
+}
 /* Link one style */
 #text-links a {
 	font-weight: bold;
