@@ -24,12 +24,21 @@
       <h1>
          <span class="strong">Accessible focus states testing site</span>
       </h1>
-      <h2>Use keyboard navigation (tab key) to cycle through different styles</h2>
     </header>
+    <nav>
+      <a href="/menu.html">Menu, search bar, social links, tabs ↗</a><br>
+      <a href="#link-styles">Link styles</a><br>
+      <a href="#coloured-backgrounds">Links on coloured backgrounds</a><br>
+      <a href="#inputs">Input fields</a><br>
+      <a href="#buttons">Buttons</a><br>
+      <a href="#hub-cards">Hub cards / link block cards</a><br>
+      <a href="#checkboxes">Checkboxes</a><br>
+      <a href="#accordion">Accordions</a>
+    </nav>
     <main>
       <hr class="dashed">
       <section>
-         <h3>Link styles</h3>
+         <h3 id="link-styles">Link styles</h3>
          <div id="text-links">
             <div id="link-one">
                <a href="#">Link style</a>
@@ -53,7 +62,7 @@
       </section>
       <hr class="dashed">
       <section>
-         <h3>Coloured backgrounds</h3>
+         <h3 id="coloured-backgrounds">Coloured backgrounds</h3>
          <div class="yellow-bg">
             <div id="link-seven">
                <a href="#">Link style</a>
@@ -71,42 +80,11 @@
          </div>
       </section>
       <hr class="dashed">
-      <section>
-         <h3>Facebook links</h3>
-         <div class="black-bg" role="link">
-            <ul class="flex-container">
-               <a class="flex-item link link--navigation link--light true-white" href="https://www.facebook.com/wellingtoncitycouncil" aria-label="Opens link to Wellington City Council Facebook page" title="Open WCC Facebook">
-               <span class="flex-item icon icon--social icon--social-facebook"></span>
-               Like us on Facebook
-               </a>
-            </ul>
-         </div>
-        
-      </section>
-      <hr class="dashed">
          
 
       <div class="nobg-label">
-            <h3>Input fields</h3>
-         
-         <!--div class="Forms">
-            <div class="Searchy">Search</div>
-            <div class="IconsFunctional">
-              <div class="BaseIconsFunctional">
-                <img class="Union" alt="Search glass icon"src="icons/union.svg" />
-              </div>
-            </div>
-         </div-->
-   
-         <form role="search" id="form">
-            <input type="search" id="query" name="q"
-             placeholder="Search"
-             aria-label="Search through site content">
-            <button type="searchy"><svg type="search" viewBox="0 0 20 22"><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M18.5 9.21292C18.5 12.9348 15.4829 15.9519 11.761 15.9519C8.03917 15.9519 5.02202 12.9348 5.02202 9.21292C5.02202 5.49108 8.03917 2.47393 11.761 2.47393C15.4829 2.47393 18.5 5.49108 18.5 9.21292ZM20 9.21292C20 13.7632 16.3113 17.4519 11.761 17.4519C9.7464 17.4519 7.90067 16.7288 6.46919 15.528L1.17207 20.8252C0.903942 21.0933 0.469222 21.0933 0.201095 20.8252C-0.0670318 20.557 -0.0670318 20.1223 0.201095 19.8542L5.49387 14.5614C4.26439 13.1221 3.52202 11.2542 3.52202 9.21292C3.52202 4.66265 7.21074 0.973933 11.761 0.973933C16.3113 0.973933 20 4.66265 20 9.21292Z"></path></svg></button>
-         </form>
-         <script src="scripts/search.js"></script>
-
-
+            <h3 id="inputs">Input fields</h3>
+    
          <div class="govuk-form-group">
             <label class="input--label">Label</label>
               <div class="govuk-date-input" id="passport-issued">
@@ -229,7 +207,7 @@
       </section>
       <hr class="dashed">
       <section>
-         <h3>Buttons</h3>
+         <h3 id="buttons">Buttons</h3>
          <h4>Submit buttons</h4>
          <button type="button" class="button">Button</button>
          <button type="button" class="button-a">Button</button>
@@ -240,7 +218,7 @@
       </section>
       <hr class="dashed">
       <section>
-         <h3>Hub cards</h3>
+         <h3 id="hub-cards">Hub cards</h3>
          <div class="full-width-yellow">
          <ul class="linkCards">
             <li class="yellow-card">
@@ -270,7 +248,7 @@
       </section>
       <hr class="dashed">
       <section>
-         <h3>Checkboxes</h3>
+         <h3 id="checkboxes">Checkboxes</h3>
          <input type="checkbox" class="checkbox-round" aria-labelledby="checkbox">
          <label for="checkbox">Label</label>
          <input type="checkbox" class="checkbox-square" aria-labelledby="checkbox">
@@ -278,7 +256,7 @@
       </section>
       <hr class="dashed">
       <section>
-         <h3>Accordions</h3>
+         <h3 id="accordion">Accordions</h3>
          <div class="full-width-white">
          <details aria-labelledby="accordion">
             <summary>Accordion title</summary>
@@ -294,69 +272,9 @@
          </details>
       </div>
       </section>
-      <hr class="dashed">
-      <section>
-         <h3>Tabs</h3>
-         <div class="tab-area">
-            <div class="tabs">
-               <div role="tablist" aria-labelledby="tablist-1" class="automatic">
-               <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
-                  <span class="focus">Address</span>
-               </button>
-               <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
-                  <span class="focus">Street Range</span>
-               </button>
-               <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
-                  <span class="focus">Account</span>
-               </button>
-               </div>
-         
-          
-               <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-                  <p>Property Address</p>
-                  <div class="input--field-group">
-                     <input class="input--field-a" id="user-name" type="text" name="user_name" />
-                    <div tabindex="0" role="button">Search</div>
-                  </div>
-               
-            </div>
-               <div id="tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="is-hidden">
-               
-               <p>From House Number</p>
-               <div class="input--field-group">
-                  <input class="input--field-a" id="user-name" type="text" name="user_name" />
-                 <div tabindex="0" role="button">Search</div>
-               </div>
-               <p>To House Number</p>
-               <div class="input--field-group">
-                  <input class="input--field-a" id="user-name" type="text" name="user_name" />
-                 <div tabindex="0" role="button">Search</div>
-               </div>
-               <p>Street Name</p>
-               <div class="input--field-group">
-                  <input class="input--field-a" id="user-name" type="text" name="user_name" />
-                 <div tabindex="0" role="button">Search</div>
-               </div>
-            </div>   
-            <div id="tabpanel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="is-hidden">
-               <p>Account Number</p>
-               <div class="input--field-group">
-                  <input class="input--field-a" id="user-name" type="text" name="user_name" />
-                 <div tabindex="0" role="button">Search</div>
-               </div>
-          </div>
-         </div>
-          <script src="/scripts/tabs-automatic.js"></script>
-
-      </section>
-      <section>
-      
-
-
-
     </main>
     <footer>
-        <p>Still a work in progress. Made using <a href="https://www.figma.com/file/gqziIQ2VewQDCaU8nLfuSC/accessible-focus-states?type=design&node-id=51-814&mode=design&t=V93W15GEvWnqs6bF-0" aria-label="Opens Figma mockups of keyboard accessible focus states of the Wellington City Council website." title="Go to Figma file." target="_blank">this Figma document ↗</a></p>
+        <p>Made using <a href="https://www.figma.com/file/gqziIQ2VewQDCaU8nLfuSC/accessible-focus-states?type=design&node-id=51-814&mode=design&t=V93W15GEvWnqs6bF-0" aria-label="Opens Figma mockups of keyboard accessible focus states of the Wellington City Council website." title="Go to Figma file." target="_blank">this Figma document ↗</a></p>
     </footer>
    </body>
 </html>
