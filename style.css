@@ -1,3 +1,4 @@
+
 /* Fonts */
 @font-face {
 	font-family: 'Guardian Sans';
@@ -197,7 +198,7 @@ p {
 }
 #link-eight a:hover,#link-eight a:active {
 	text-decoration: underline;
-	color: #ffffff;
+	color: #006CD4;
 }
 /* Link nine style */
 #link-nine a:focus {
@@ -225,7 +226,9 @@ p {
 }
 .icon:after {
 	content: "";
-	display: inline-block;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 	background-repeat: no-repeat;
 	background-position: 50%;
 	position: relative;
@@ -235,13 +238,19 @@ p {
 	height: 30px;
 	background-size: 30px 30px;
 	border-radius: 10rem;
-	background-color: #fff 
+	background-color: #fff ;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 a:hover .icon--social:after {
 	background-color: #949494 
 }
 .icon--social-facebook:after {
 	background-image: url(/icons/facebook.svg);
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 .link--light {
 	color: #fff 
@@ -270,7 +279,8 @@ a:hover .icon--social:after {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
-	align-self: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 .nowrap {
 	-webkit-flex-wrap: nowrap;
@@ -395,6 +405,38 @@ a:hover .icon--social:after {
 	font-weight: bold;
 	margin-bottom: 0.5em;
 }
+.input--field-rounded {
+	width: 256px;
+	height: 2.5em;
+	border: 2px solid #000000;
+	border-radius: 30px;
+	margin: 10px;
+	padding-right: 10px;
+	background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+	cursor: pointer;
+}
+.input--field-rounded:hover {
+	color: #006CD4;
+}
+.input--field-rounded:focus {
+	outline-color: #006CD4;
+	border-color: #003480;
+	outline-style: solid;
+	outline-width: 4px;
+}
+.input--field-rounded::placeholder {
+	font-weight: normal;
+	font-family: 'Guardian Sans';
+	color: #000;
+	padding-left: 1rem;
+}
+
+
+  
+
+
+
+
 /* Buttons */
 .button {
 	background-color:#006CD4;
@@ -603,6 +645,15 @@ a:hover .icon--social:after {
 	background: #FD0;
 	position: relative;
 }
+.linkCards li.yellow-card:focus {
+	list-style: none;
+	margin: 1em 0;
+	padding: 24px;
+	background: #FD0;
+	position: relative;
+	border: #000;
+	outline-style: double;
+}
 .linkCards li.white-card {
 	list-style: none;
 	margin: 1em 0;
@@ -640,13 +691,12 @@ a:hover .icon--social:after {
 .checkbox-round:focus {
 	background-color: #fff;
 	color: #006CD4;
-	outline-color: #d4d4d4;
+	outline-color: #006CD4;
 	border-color: #006CD4;
 	border-width: 2px;
 	border-style: double;
 	outline-style: solid;
 	outline-width: 2px;
-	box-shadow: 0 0 0 4px #006CD4;
 }
 .checkbox-round:checked {
 	background-color: gray;
@@ -669,13 +719,12 @@ a:hover .icon--social:after {
 .checkbox-square:focus {
 	background-color: #fff;
 	color: #006CD4;
-	outline-color: #d4d4d4;
+	outline-color: #006CD4;
 	border-color: #006CD4;
 	border-width: 2px;
 	border-style: double;
 	outline-style: solid;
 	outline-width: 2px;
-	box-shadow: 0 0 0 4px #006CD4;
 }
 .checkbox-square:hover {
 	border-color: #006CD4;
@@ -887,16 +936,20 @@ details > summary > p {
 	background: #FD0;
 }
 .h1,h1 {
-	font-size:2.5rem 
+	font-size:2.5rem;
+	font-weight: normal;
 }
 .h2,h2{
-   font-size:2rem
+   font-size:2rem;
+   font-weight:normal;
 }
 .h3,h3{
-   font-size:1.75rem
+   font-size:1.75rem;
+   font-weight:normal;
 }
 .h4,h4{
-   font-size:1.5rem
+   font-size:1.5rem;
+   font-weight:normal;
 }
 .h5,h5{
    font-size:1.25rem
@@ -904,3 +957,281 @@ details > summary > p {
 .h6,h6{
    font-size:1rem
 }
+
+.govuk-input{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-weight:400;
+    font-size:16px;
+    font-size:1rem;
+    line-height:1.25;
+    box-sizing:border-box;
+    width:100%;
+    height:40px;
+    height:2.5rem;
+    margin-top:0;
+	text-align: center;
+    padding:1px;
+    border:2px solid #0b0c0c;
+    border-radius:0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none
+}
+.govuk-input::placeholder {
+	font-size: 14px;
+}
+@media print{
+    .govuk-input{
+        font-family:sans-serif
+    }
+}
+@media(min-width: 40.0625em){
+    .govuk-input{
+        font-size:19px;
+        font-size:1.1875rem;
+        line-height:1.3157894737
+    }
+}
+@media print{
+    .govuk-input{
+        font-size:14pt;
+        line-height:1.15
+    }
+}
+.govuk-input:focus{
+    outline:3px solid #fd0;
+    outline-offset:0;
+    box-shadow:inset 0 0 0 2px
+}
+.govuk-input:disabled{
+    opacity:.5;
+    color:inherit;
+    background-color:rgba(0,0,0,0);
+    cursor:not-allowed
+}
+.govuk-input::-webkit-outer-spin-button,.govuk-input::-webkit-inner-spin-button{
+    margin:0;
+    -webkit-appearance:none
+}
+.govuk-input[type=number]{
+    -moz-appearance:textfield
+}
+.govuk-input--error{
+    border-color:#d4351c
+}
+.govuk-input--error:focus{
+    border-color:#0b0c0c
+}
+.govuk-input--extra-letter-spacing{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-feature-settings:"tnum" 1;
+    font-feature-settings:"tnum" 1;
+    font-weight:400;
+    letter-spacing:.05em
+}
+@media print{
+    .govuk-input--extra-letter-spacing{
+        font-family:sans-serif
+    }
+}
+@supports(font-variant-numeric: tabular-nums){
+    .govuk-input--extra-letter-spacing{
+        -webkit-font-feature-settings:normal;
+        font-feature-settings:normal;
+        font-variant-numeric:tabular-nums
+    }
+}
+.govuk-input--width-4{
+    max-width:3.5em
+}
+.govuk-input--width-3{
+    max-width:34em
+}
+.govuk-input--width-2{
+    max-width: 2.5em
+}
+.govuk-input__wrapper{
+    display:flex
+}
+.govuk-input__wrapper .govuk-input{
+    flex:0 1 auto
+}
+.govuk-input__wrapper .govuk-input:focus{
+    z-index:1
+}
+@media(max-width: 19.99em){
+    .govuk-input__wrapper{
+        display:block
+    }
+    .govuk-input__wrapper .govuk-input{
+        max-width:100%
+    }
+}
+.govuk-input__prefix,.govuk-input__suffix{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-weight:400;
+    font-size:16px;
+    font-size:1rem;
+    line-height:1.25;
+    box-sizing:border-box;
+    display:inline-block;
+    min-width:40px;
+    min-width:2.5rem;
+    height:40px;
+    height:2.5rem;
+    padding:5px;
+    border:2px solid #0b0c0c;
+    background-color:#f3f2f1;
+    text-align:center;
+    white-space:nowrap;
+    cursor:default;
+    flex:0 0 auto
+}
+@media print{
+    .govuk-input__prefix,.govuk-input__suffix{
+        font-family:sans-serif
+    }
+}
+@media(min-width: 40.0625em){
+    .govuk-input__prefix,.govuk-input__suffix{
+        font-size:19px;
+        font-size:1.1875rem;
+        line-height:1.3157894737
+    }
+}
+@media print{
+    .govuk-input__prefix,.govuk-input__suffix{
+        font-size:14pt;
+        line-height:1.15
+    }
+}
+@media(max-width: 40.0525em){
+    .govuk-input__prefix,.govuk-input__suffix{
+        line-height:1.6
+    }
+}
+@media(max-width: 19.99em){
+    .govuk-input__prefix,.govuk-input__suffix{
+        display:block;
+        height:100%;
+        white-space:normal
+    }
+}
+@media(max-width: 19.99em){
+    .govuk-input__prefix{
+        border-bottom:0
+    }
+}
+@media(min-width: 20em){
+    .govuk-input__prefix{
+        border-right:0
+    }
+}
+@media(max-width: 19.99em){
+    .govuk-input__suffix{
+        border-top:0
+    }
+}
+@media(min-width: 20em){
+    .govuk-input__suffix{
+        border-left:0
+    }
+}
+.govuk-date-input{
+    font-size:0
+}
+.govuk-date-input:after{
+    content:"";
+    display:block;
+    clear:both
+}
+.govuk-date-input__item{
+    display:inline-block;
+    margin-right:20px;
+    margin-bottom:0
+}
+.govuk-date-input__label{
+    display:block
+}
+.govuk-date-input__input{
+    margin-bottom:0
+}
+.govuk-form-group{
+    margin-bottom:20px
+}
+.govuk-form-group:after{
+    content:"";
+    display:block;
+    clear:both
+}
+@media(min-width: 40.0625em){
+    .govuk-form-group{
+        margin-bottom:30px
+    }
+}
+
+/* Search bar */
+
+form {
+	width: 250px;
+	height: 44px;
+	border-radius: 35px;
+	border-color: #000;
+	outline-color: #000000;
+	outline-width: 2px;
+	display: flex;
+	background-color: #dbdbdb;
+	flex-direction:row;
+	align-items:center;
+	margin-bottom: 50px;
+  }
+
+form:hover {
+	outline:3px solid #006CD4;
+    outline-offset:0;
+    box-shadow:inset 0 0 0 2px;
+}
+
+form:focus-visible {
+	outline:3px solid #FD0;
+    outline-offset:0;
+    box-shadow:inset 0 0 0 2px;
+	background: #000;
+	color: #FFF;
+}
+  
+  input[type="search"] {
+	all: unset;
+	font: 16px;
+	height: 100%;
+	width: 100%;
+	padding: 6px 10px;
+	margin: 10px;
+	outline-width: 2px;
+	outline-color: #000;
+  }
+  
+  ::placeholder {
+	color: #000000;
+	font-family: 'Guardian Sans';
+  }
+  
+  svg[type="search"] {
+	color: #000000;
+	fill: currentColor;
+	width: 20px;
+	height: 20px;
+	padding: 10px;
+  }
+  
+  button[type="searchy"] {
+	all: unset;
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+		padding-right: 10px;
+
+  }
