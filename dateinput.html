@@ -1,0 +1,53 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>GOVUK style date input - Accessible focus states</title>
+      <meta name="description" content="Site for testing keyboard navigation of key elements.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="twitter:image" content="/images/og.png">
+      <meta property="twitter:title" content="Accessible focus states">
+      <meta property="og:image" content="/images/og.png">
+      <meta property="og:title" content="Accessible focus states">
+      <meta property="og:description" content="Site for testing keyboard navigation of key elements." />
+      <meta property="og:url" content="https://accessible-focus-states.vercel.app/">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+   </head>
+<body>
+<div class="govuk-form-group">
+    <label class="input--label">Label</label>
+      <div class="govuk-date-input" id="passport-issued">
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+              Day
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="number" placeholder="DD" inputmode="numeric">
+          </div>
+        </div>
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+              Month
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="number" placeholder="MM" inputmode="numeric">
+          </div>
+        </div>
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+              Year
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="number" placeholder="YYYY" inputmode="numeric">
+          </div>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
