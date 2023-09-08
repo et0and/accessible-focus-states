@@ -292,14 +292,18 @@ a:hover .icon--social:after {
 	height: 2.5em;
 	border: 2px solid #000000;
 }
-.input--field-a:hover {
-	color: #006CD4;
-}
 .input--field-a:focus {
+	background-color: #fff;
+	color: #006CD4;
 	outline-color: #006CD4;
-	border-color: #003480;
+	border-color: #006CD4;
+	border-width: 2px;
+	border-style: double;
 	outline-style: solid;
-	outline-width: 4px;
+	outline-width: 2px;
+}
+.input--field-a:hover {
+	border-color: #006CD4;
 }
 .input--field-b {
 	width: 256px;
